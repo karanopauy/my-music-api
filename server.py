@@ -1,6 +1,7 @@
 from flask import Flask, jsonify, request
 import requests as rq
 import json as js
+import lxml
 from bs4 import BeautifulSoup as bs
 from flask_cors import CORS
 
