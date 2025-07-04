@@ -1,6 +1,3 @@
-# app.py - Your glorious Flask backend server.
-# This file will run your Python web scraping logic and expose it as an API.
-
 from flask import Flask, jsonify, request
 import requests as rq
 import json as js
@@ -233,4 +230,4 @@ def get_lyrics_endpoint():
 
 
 if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0', port=5000)
+    app.run(debug=True, host='0.0.0.0')
