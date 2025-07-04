@@ -83,7 +83,7 @@ def getTopSongs():
         response.raise_for_status()
     except rq.exceptions.RequestException as e:
         print(f"ERROR: Failed to fetch Billboard data. Network probably died or Billboard hates us: {e}")
-        return []
+        return ['No Internet Access']
 
     soups = bs(response.text, 'html.parser')
 
